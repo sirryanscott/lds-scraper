@@ -1,0 +1,36 @@
+[
+ {
+  "Username": "sailorjeni",
+  "Session": {
+   "Name": "ObSSOCookie",
+   "Value": "XxXP5PG5MpA8H%2B%2FiNOwk8U1w3lYrisxksJSauXIc1wh92WT4ytRNlzepa23BO8gwa%2BfHsrxHGSDmYr4viPPXk9C6yy0RkYijKD3k%2FB7w8F%2FXE%2FD5Y%2FlGS9cBh%2Fhl1JcyBZ0N%2BCQCax78emWNHohqM%2BqNjPYP5i%2By%2F74vaSoKsk%2FXJcEdHUwXF5%2Fbg%2FWJ371Ano6eVOKaNPD6GlbvKPmE1dz76Q6F4XkMoVYUnmjX3mpQ1hyT4E52ZfjyqLawEbxAvsVfF6Q5WNFdnrIgmgMEpbX3jran1etprhA72jp6A5c%3D",
+   "Path": "/",
+   "Domain": ".churchofjesuschrist.org",
+   "Expires": "0001-01-01T00:00:00Z",
+   "RawExpires": "",
+   "MaxAge": 0,
+   "Secure": true,
+   "HttpOnly": false,
+   "SameSite": 0,
+   "Raw": "ObSSOCookie=XxXP5PG5MpA8H%2B%2FiNOwk8U1w3lYrisxksJSauXIc1wh92WT4ytRNlzepa23BO8gwa%2BfHsrxHGSDmYr4viPPXk9C6yy0RkYijKD3k%2FB7w8F%2FXE%2FD5Y%2FlGS9cBh%2Fhl1JcyBZ0N%2BCQCax78emWNHohqM%2BqNjPYP5i%2By%2F74vaSoKsk%2FXJcEdHUwXF5%2Fbg%2FWJ371Ano6eVOKaNPD6GlbvKPmE1dz76Q6F4XkMoVYUnmjX3mpQ1hyT4E52ZfjyqLawEbxAvsVfF6Q5WNFdnrIgmgMEpbX3jran1etprhA72jp6A5c%3D;secure; path=/; domain=.churchofjesuschrist.org",
+   "Unparsed": null
+  }
+ },
+ {
+  "Username": "sirryanscott",
+  "Session": {
+   "Name": "ObSSOCookie",
+   "Value": "qZHs46JsgtYsg8F5CnjCTNTvHIO%2FJ%2BWYNQhhCGb7Q18U%2F0k7%2Bk91S7o6cczYk0EVK10ghhPZ69ZvgX08iuav9ka%2FyZOcn%2FBPcA6n2TxFDQU%2BijbzWamhs5scryZAoVfd04fyzaEGPrK4c3UdcEXFgyDQ3FL9oqVjeDMqz6un2wb%2FPCxtXaUkjUQdOjOUVp%2FntN43LMFuATv6dTD1Lhgs%2Fc%2BpMpwGKcGKmjITRoLKQK8oIMNDTtjFAyyrphTd7TPBO5620V4nLPAuSi0f2lPTT%2F60P6M3qD%2BS8RtfCIzpSYde1bOHUkGgLKL2FWyfTqls",
+   "Path": "/",
+   "Domain": ".churchofjesuschrist.org",
+   "Expires": "0001-01-01T00:00:00Z",
+   "RawExpires": "",
+   "MaxAge": 0,
+   "Secure": true,
+   "HttpOnly": false,
+   "SameSite": 0,
+   "Raw": "ObSSOCookie=qZHs46JsgtYsg8F5CnjCTNTvHIO%2FJ%2BWYNQhhCGb7Q18U%2F0k7%2Bk91S7o6cczYk0EVK10ghhPZ69ZvgX08iuav9ka%2FyZOcn%2FBPcA6n2TxFDQU%2BijbzWamhs5scryZAoVfd04fyzaEGPrK4c3UdcEXFgyDQ3FL9oqVjeDMqz6un2wb%2FPCxtXaUkjUQdOjOUVp%2FntN43LMFuATv6dTD1Lhgs%2Fc%2BpMpwGKcGKmjITRoLKQK8oIMNDTtjFAyyrphTd7TPBO5620V4nLPAuSi0f2lPTT%2F60P6M3qD%2BS8RtfCIzpSYde1bOHUkGgLKL2FWyfTqls;secure; path=/; domain=.churchofjesuschrist.org",
+   "Unparsed": null
+  }
+ }
+]
