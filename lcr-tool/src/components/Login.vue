@@ -8,8 +8,7 @@
         Password:<br>
         <input type="password" v-model="password" placeholder="Password">
         <br><br>
-        NEED TO ADD AN IF CHECK BEFORE ROUTING
-        <router-link to="/members"><input type="submit" value="Submit"></router-link>
+        <router-link v-if="!loggedInErr" to="/members"><input type="submit" value="Submit"></router-link>
     </form>
     <div v-if="loggedInErr" id="invalid">
         <p>Invalid username or password</p>
@@ -42,6 +41,9 @@ export default {
 
       axios.post('/login/', params).then((response) => {
         console.log('Logging in')
+        if (response.status === 200) {
+          this.loggedInErr = false
+        }
       }).catch((error) => {
         if (error.response.status === 401) {
           console.log('invalid credentials')
