@@ -47,7 +47,7 @@ func getSession(username, password string) *http.Cookie {
 
 	resp, err := http.PostForm(utilities.LoginURL, formData)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err.Error())
 		return nil
 	}
 
