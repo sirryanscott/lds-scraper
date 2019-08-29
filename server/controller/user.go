@@ -3,11 +3,11 @@ package controller
 import (
 	"errors"
 	"fmt"
-	"lds-scraper/server/models"
-	"lds-scraper/server/utilities"
 	"log"
 	"net/http"
 	"net/url"
+	"ryan/lds-scraper/server/models"
+	"ryan/lds-scraper/server/utilities"
 )
 
 //Login validates the credentials and gets the session key

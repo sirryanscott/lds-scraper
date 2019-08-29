@@ -4,7 +4,7 @@
     <form @submit.prevent="login">
         Username:<br>
         <input type="text" v-model="username" placeholder="Username">
-        <br>
+        <br><br>
         Password:<br>
         <input type="password" v-model="password" placeholder="Password">
         <br><br>
@@ -73,15 +73,19 @@ ul {
   padding: 0;
 }
 .login {
-    margin-left: 50%;
-    margin-right: 50%;
-    margin: auto;
+    margin-left: 25%;
+    margin-right: 25%;
     width: 50%;
 }
+input {
+  width: 95%;
+  margin-top:5px;
+  padding:3px;
+}
 form {
-    width: 50%;
-    margin-left: 50%;
-    margin-right: 50%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 25%;
     display: inline-block;
 }
 </style>

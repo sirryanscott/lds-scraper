@@ -87,8 +87,8 @@ table, th, td {
 }
 
 #table {
-    margin: auto;
-    width: 80%;
+    display: inline-block;
+  margin-left: 15%;
 }
 td {
     padding: 5px;

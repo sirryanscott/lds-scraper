@@ -1,11 +1,12 @@
 package controller
 
 import (
+	"fmt"
 	"io/ioutil"
-	"lds-scraper/server/models"
-	"lds-scraper/server/utilities"
 	"log"
 	"net/http"
+	"ryan/lds-scraper/server/models"
+	"ryan/lds-scraper/server/utilities"
 )
 
 // GetMembers grabs the member list from LCR for the user
@@ -35,5 +36,6 @@ func GetMembers(username string) ([]byte, error) {
 		log.Fatal(err)
 	}
 
+	fmt.Println(body)
 	return body, nil
 }

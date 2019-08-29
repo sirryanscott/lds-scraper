@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"lds-scraper/server/controller"
 	"log"
 	"net/http"
+	"ryan/lds-scraper/server/controller"
 )
 
 // Login is the handler for logging in a user to churchofjesuschrist.org
