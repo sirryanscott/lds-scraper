@@ -8,7 +8,7 @@
         Password:<br>
         <input type="password" v-model="password" placeholder="Password">
         <br><br>
-        <router-link v-if="!loggedInErr" to="/members"><input type="submit" value="Submit"></router-link>
+        <input type="submit" value="Submit">
     </form>
     <div v-if="loggedInErr" id="invalid">
         <p>Invalid username or password</p>
@@ -42,6 +42,7 @@ export default {
       axios.post('/login/', params).then((response) => {
         console.log('Logging in')
         if (response.status === 200) {
+          this.$router.push({name: 'Members', params: { username: this.username }})
           this.loggedInErr = false
         }
       }).catch((error) => {
@@ -65,13 +66,22 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+  text-align: center;
 }
 ul {
   list-style-type: none;
   padding: 0;
 }
 .login {
+    margin-left: 50%;
+    margin-right: 50%;
     margin: auto;
     width: 50%;
+}
+form {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    display: inline-block;
 }
 </style>

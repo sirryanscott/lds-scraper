@@ -27,11 +27,14 @@ func Login(w http.ResponseWriter, r *http.Request) {
 
 // GetMembers is the handler for getting the member list from LCR
 func GetMembers(w http.ResponseWriter, r *http.Request) {
+	log.Println("Getting member list")
+	(w).Header().Set("Access-Control-Allow-Origin", "*")
 	username := r.FormValue("username")
 
 	mList, err := controller.GetMembers(username)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		w.WriteHeader(http.StatusForbidden)
+		w.Write([]byte("User doens't have access"))
 	}
 
 	w.Header().Set("Content-Type", "application/json")
