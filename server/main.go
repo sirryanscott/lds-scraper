@@ -1,9 +1,9 @@
 package main
 
 import (
+	"lds-scraper/server/handler"
 	"log"
 	"net/http"
-	"ryan/lds-scraper/server/handler"
 )
 
 func main() {

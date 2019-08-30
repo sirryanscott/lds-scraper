@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
+	"lds-scraper/server/utilities"
 	"net/http"
 	"os"
-	"ryan/lds-scraper/server/utilities"
 )
 
 // User has a username and a session cookie
