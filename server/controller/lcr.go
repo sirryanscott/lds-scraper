@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"io/ioutil"
 	"lds-scraper/server/models"
 	"lds-scraper/server/utilities"
@@ -36,6 +35,5 @@ func GetMembers(username string) ([]byte, error) {
 		log.Fatal(err)
 	}
 
-	fmt.Println(body)
 	return body, nil
 }
