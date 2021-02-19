@@ -19,6 +19,7 @@ func Login(username, password string) error {
 
 	session := getSession(username, password)
 	if session == nil {
+		fmt.Println("Unable to get session")
 		return errors.New("Unable to get session")
 	}
 	fmt.Println(session)
@@ -46,17 +47,21 @@ func getSession(username, password string) *http.Cookie {
 	formData.Add("password", password)
 
 	resp, err := http.PostForm(utilities.LoginURL, formData)
+	fmt.Println(resp)
 	if err != nil {
 		log.Println(err.Error())
 		return nil
 	}
 
+	fmt.Println(len(resp.Cookies()))
 	for _, cookie := range resp.Cookies() {
+		fmt.Println(cookie)
 		if cookie.Name == "ObSSOCookie" {
 			fmt.Println(cookie)
 			return cookie
 		}
 	}
+	fmt.Println("Cookie not found")
 	return nil
 
 }

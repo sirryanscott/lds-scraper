@@ -40,3 +40,26 @@ func GetMembers(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(mList)
 }
+
+// TravelFee calculates the fee for travel for myminiponyparty
+func TravelFee(w http.ResponseWriter, r *http.Request) {
+	log.Println("calculating travel fee for myminiponyparty")
+	(w).Header().Set("Access-Control-Allow-Origin", "*")
+
+	keys, ok := r.URL.Query()["dest"]
+	if !ok || len(keys[0]) < 1 {
+		log.Println("URL param key missing")
+		return
+	}
+	destination := keys[0]
+
+	fee, err := controller.CalculateFee(destination)
+
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("error in fee calculation"))
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(fee)
+}
